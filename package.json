@@ -6,7 +6,9 @@
   "scripts": {
     "serve": "live-server public",
     "webpack": "webpack",
-    "build": "babel src/index.js --out-file public/scripts/bundle.js --presets env --watch"
+    "build": "babel src/index.js --out-file public/scripts/bundle.js --presets env --watch",
+    "dev": "concurrently \"npm run serve\" \" npm run webpack \" "
+    
   },
   "keywords": [
     "jquery",
@@ -19,6 +21,7 @@
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
+    "concurrently": "^5.1.0",
     "live-server": "^1.2.1",
     "webpack": "^4.42.0",
     "webpack-cli": "^3.3.11"

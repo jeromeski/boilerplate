@@ -1,12 +1,3 @@
-const name = 'Jen'
-console.log(name)
+import {shriek} from './scream';
 
-const hangman = () => {
-  myMethod()
-}
-
-const myMethod = () => {
-  return 'Testing'
-}
-
-console.log(hangman())
+console.log(shriek())
